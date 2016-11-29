@@ -9,13 +9,37 @@
         <h1>Sarah's Interactive Resume</h1>
         <div class = "zoomViewport demo">
             <div class = "container zoomContainer">
-                <div class = "row" style = "height: 100px"> 
-                    <div class = "col-md-2">
-                        <div id = "aboutme" class = "section zoomTarget">
-                            <p>(Temp filler) Hello, description, etc etc</p>
+                <div class = "row" style = "height: 90px"> 
+                    <div class = "col-md-2 zoomTarget" data-targetsize="0.9">
+                        <div id = "aboutme" class = "section">
+                            <p id = "label">about me</p>
+                            <p>I’m Sarah Shy, an undergraduate student at Carnegie Mellon University from Boston, Massachusetts.</p>
+                            <p>I am working toward a degree in Statistics and an additional degree in Human-Computer Interaction.</p>
+                            <p>I recently became interested in the field of research, picking up semester-long independent study research projects.</p>
+                            <p>I plan to continue to conduct research in graduate school.</p>
                         </div>
                     </div>
                     <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                </div>
+
+                <div class = "row" style = "height: 90px">
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2 zoomTarget">
+                        <div id = "skills" class = "section">
+                            <div id = "skillsCircle">skills</div>
+                            <div id = "outerCircle"></div>
+                            <div id = "ucd">user-centered design</div>
+                        </div>
                     </div>
                     <div class = "col-md-2">
                     </div>
@@ -31,26 +55,8 @@
                     <div class = "col-md-2">
                     </div>
                     <div class = "col-md-2">
-                        <div id = "skills" class = "section zoomTarget">
-                            <p>(Temp filler) Skill etc etc</p>
-                        </div>
                     </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                </div>
-
-                <div class = "row" style = "height: 120px">
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
+                    <div class = "col-md-2 zoomTarget">
                         <div id = "software" class = "section">
                             <p>(Temp filler) Software stuff</p>
                         </div>
@@ -63,7 +69,7 @@
                     </div>
                 </div>
 
-                <div class = "row" style = "height: 120px">
+                <div class = "row" style = "height: 100px">
                     <div class = "col-md-2">
                     </div>
                     <div class = "col-md-2">
@@ -72,7 +78,7 @@
                     </div>
                     <div class = "col-md-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-md-2 zoomTarget">
                         <div id = "hobbies" class = "section">
                             <p>(Temp filler) My hobbies and images</p>
                         </div>
@@ -81,14 +87,14 @@
                     </div>
                 </div>
 
-                <div class = "row" style = "height: 120px">
+                <div class = "row" style = "height: 100px">
                     <div class = "col-md-2">
                     </div>
                     <div class = "col-md-2">
                     </div>
                     <div class = "col-md-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-md-2 zoomTarget">
                         <div id = "experience" class = "section">
                             <p>(Temp filler) Experience</p>
                         </div>
@@ -97,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class = "row" style = "height: 120px">
+                <div class = "row" style = "height: 100px">
                     <div class = "col-md-2">
                     </div>
                     <div class = "col-md-2">
@@ -108,7 +114,7 @@
                     </div>
                     <div class = "col-md-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-md-2 zoomTarget">
                         <div id = "contactme" class = "section">
                             <p>(Temp filler) Contact info</p>
                         </div>
@@ -118,8 +124,8 @@
 
 
         </div>
-        <div class="zoomButton" id = "previousButton" data-type="prev" data-root=".demo"></div>
-        <div class="zoomButton" id = "nextButton" data-type="next" data-root=".demo"></div>
+        <div class="zoomButton" id = "previousButton" data-type="prev" data-root=".demo"><</div>
+        <div class="zoomButton" id = "nextButton" data-type="next" data-root=".demo">></div>
 
 
         <link  rel="stylesheet" type="text/css" href="A6_style.css">

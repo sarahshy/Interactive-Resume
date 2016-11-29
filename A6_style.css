@@ -1,12 +1,18 @@
+/*setting up page*/
+
+html * {
+    font-family: "avenir" !important;
+}
+
 h1 {
     text-align: center;
 }
 
 .section {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-style: solid;
-    border-radius: 100px;
+    border-radius: 45px;
     font-size: 7px;
 }
 
@@ -15,12 +21,14 @@ h1 {
     padding-left: 5px;
 }
 
+/*zoom buttons*/
 
 .zoomButton {
     height: 50px;
     width: 50px;
     background-color: grey;
 }
+
 
 #previousButton {
     float: left;
@@ -32,3 +40,70 @@ h1 {
     position: relative;
 }
 
+/*circles*/
+
+#aboutme {
+    background: #AFAAC6;
+    border: none;
+}
+
+#skills {
+    border-style: none;
+}
+#skillsCircle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: #FDBA40;
+    font-size: 7px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+#outerCircle {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-style: solid;
+    border-radius: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-color: #B8D7D0;
+}
+
+#ucd {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #8C9F9E;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+/*content*/
+
+#aboutme {
+    font-size: 3px;
+    padding-top: 10px;
+}
+
+
+#aboutme p {
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    padding-left: 15px;
+    width: 80px;
+}
+
+#label {
+    font-size: 5px;
+    color: white;
+    padding-left: 20px !important;
+}
