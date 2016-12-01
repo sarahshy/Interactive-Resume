@@ -86,7 +86,7 @@
                     </div>
                     <div class = "col-md-2 zoomTarget">
                         <div id = "hobbies" class = "section">
-                            <p>My Hobbies</p>
+                            <p id = "hobTitle">my hobbies</p>
                         </div>
                     </div>
                     <div class = "col-md-2">
@@ -102,11 +102,21 @@
                     </div>
                     <div class = "col-md-2 zoomTarget">
                         <div id = "research" class = "section">
-                            <p id = "resLabel">research</p>
-                            <p class = "resLabel" id = "resLab1" style = "margin-left: 15px; margin-top: -28px;">Independent Study Research<br />Statistics Department, CMU</p>
-                            <p class = "resLabel" id = "resLab2" style = "margin-left: 30px; margin-top: -20px;">Research Assistant<br />Infant Language & Learning Lab<br />Psychology Department, CMU</p>
-                            <p class = "resLabel" id = "resLab3" style = "margin-left: 45px; margin-top: -33px;">Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU</p>
-                            <div id = "res1"><div class = "dot"></div></div>
+                            <p id = "resTitle">research</p>
+                            <div id = "timeLine">
+                                <div id = "firstTick" class = "tick" style = "margin-left: 35px"></div>
+                                <div id = "secondTick" class = "tick" style = "margin-left: 75px"></div>
+                                <div id = "2015" style = "position: absolute; font-size: 3px; margin-left: 15px">2015</div>
+                                <div id = "2016" style = "position: absolute; font-size: 3px; margin-left: 52px">2016</div>
+                            </div>
+                            <p class = "resLabel" style = "margin-left: 15px; margin-top: -28px;">Independent Study Research<br />Statistics Department, CMU</p>
+                            <p class = "resLabel" style = "margin-left: 30px; margin-top: -20px;">Research Assistant<br />Infant Language & Learning Lab<br />Psychology Department, CMU</p>
+                            <p class = "resLabel" style = "margin-left: 45px; margin-top: -33px;">Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU</p>
+                            <div id = "res1">
+                                <div class = "dot"></div>
+                                <div id = "res1Line"></div>
+                            </div>
+
                             <div id = "res2"><div class = "dot"></div></div>
                             <div id = "res3"><div id = "lastDot">&#9733;</div></div>
                             <p id = "hoverInst">* hover over a box to see details</p>
@@ -129,8 +139,13 @@
                     </div>
                     <div class = "col-md-2 zoomTarget">
                         <div id = "contactme" class = "section">
-                            <p>(Temp filler) Contact info</p>
+                            <p id = "contTitle">let's play a game...</p>
+                            <p id = "gameInst">Enter a decimal between 0 and 1:</p>
+                            <div id = "input"><input type = "text" placeholder = "i.e. 0.73" onkeyup="if(event.keyCode==13) enterValue();"></input></div>  
                         </div>
+                        <div id = "contactInfo">contact me</div>
+                        <p class = "contact">sarahshy@cmu.edu</p>
+                        <p class = "contact">617-407-1019</p>
                     </div>
                 </div>
             </div>

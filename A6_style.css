@@ -6,6 +6,9 @@ html * {
 
 h1 {
     text-align: center;
+    background: lightgrey;
+    margin-top: 0 !important;
+    height: 60px;
 }
 
 .section {
@@ -190,12 +193,29 @@ h1 {
     padding-top: 10px;
 }
 
-#resLabel {
+#resTitle {
     padding: 0;
     font-size: 7px;
     color: white;
     padding-left: 25px !important;
     letter-spacing: 0.3px;
+}
+
+#timeLine {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top-style: solid;
+    border-width: 1px;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+.tick {
+    position: absolute;
+    height: 2px;
+    border-left-style: solid;
+    border-width: 1px;
 }
 
 #res1 {
@@ -254,3 +274,92 @@ h1 {
     margin-left: 9px;
     margin-top: 2px;
 }
+
+#res1Line {
+    height: 20px;
+    width: 10px;
+    border-style: solid;
+    border-width: 1px;
+    color: darkgrey;
+}
+
+/*HOBBIES*/
+
+#hobbies {
+    background: #D89F79;
+    border-style: none;
+    padding-top: 10px;
+}
+
+#hobTitle {
+    padding: 0;
+    font-size: 7px;
+    color: white;
+    padding-left: 20px !important;
+    letter-spacing: 0.3px;
+}
+
+/*CONTACT ME*/
+
+#contactme {
+    height: 70px;
+    width: 70px;
+    background: #8C9F9E;
+    border-style: none;
+    padding-top: 15px;
+}
+
+#contTitle {
+    padding: 0;
+    font-size: 5px;
+    color: black;
+    padding-left: 10px !important;
+    letter-spacing: 0.3px;  
+}
+
+
+#gameInst {
+    font-size: 3px;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+input {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 2px;
+    background: white;
+    font-color: white;
+    border-radius: 3px;
+    box-shadow: 0.75px 0.75px black;
+}
+
+#input {
+    margin-left: 20px;
+    margin-top: -5px;
+
+}
+
+#contactInfo {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background: #FDBA40;
+    margin-left: 55px;
+    margin-top: -35px;
+    font-size: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.contact {
+    font-size: 3px;
+    margin-left: 65px;
+    margin-top: -20px;
+}
+
