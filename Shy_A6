@@ -7,11 +7,17 @@
     </head>
 
     <body>
-        <h1>Sarah Shy</h1>
+        <h1>Sarah Shy
+        <div id = "navArrows"style = "position: absolute">
+            <button class="zoomButton prev" id = "previousButton" data-type="prev" data-root=".demo"><b><</b></button>
+            <button class="zoomButton next" id = "nextButton" data-type="next" data-root=".demo"><b>></b></button>
+        </div>
+        </h1>
+
         <div id="popup">
 
     <!-- and here comes the image -->
-            <p><b>Hello there!</b><br /> Use the left and right arrow keys on your keyboard to navigate the site. Click anywhere to return to the home screen.</p>
+            <p><b>Hello there!</b><br /> Use the left and right arrow keys on your keyboard or the arrows in the top of the screen to navigate the site. Click anywhere to return to the home screen.</p>
 
         <!-- Now this is the button which closes the popup-->
             <button id="close">Got it!</button>
@@ -51,8 +57,11 @@
                     <div class = "col-lg-2">
                         <img id = "arrow" src = "images/arrow.png" height = "150px">
                     </div>
+                    <div class = "col-lg-2">
+
+                    </div>
                     <div class = "col-lg-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
-                        <div id = "line2"></div>
+                         <div id = "line2"></div>
                             <div id = "skills" class = "section">
                                 <div id = "skillsCircle">skills</div>
                                 <div id = "outerCircle"></div>
@@ -71,30 +80,29 @@
                     </div>
                     <div class = "col-lg-2">
                     </div>
-                    <div class = "col-lg-2">
-                    </div>
                 </div>
 
                 <div class = "row" style = "height: 100px">
                     <div class = "col-lg-2">
                     </div>
-                    <div class = "col-lg-2">
-                    </div>
                     <div class = "col-lg-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "line3"></div>
-                            <div id = "software" class = "section" style = "background: white; width: 130px; height: 80px; border-radius: 0px; margin-left: -30px; margin-top: 20px">
+                            <div id = "software" class = "section" style = "background: #f5e9dc; width: 130px; height: 80px; border-radius: 15px; margin-left: -30px; margin-top: 20px; border-style: none; border-width: 1px;">
                             <p>software</p> 
                                 <div class="bargraph" style= "width: 100px;">
                                     <ul class="bars">
-                                        <li class="bar1 purplebar" style="height: 60px;"></li>
-                                        <li class="bar2 redbar" style="height: 40px;"></li>
-                                        <li class="bar3 bluebar" style="height: 20px;"></li>
-                                        <li class="bar4 greenbar" style="height: 10px;"><span></span></li>
+                                        <li class="bar1 purplebar" style="height: 42px;"></li>
+                                        <li class="bar2 redbar" style="height: 30px;"></li>
+                                        <li class="bar3 bluebar" style="height: 25px;"></li>
+                                        <li class="bar4 greenbar" style="height: 20px;"><span></span></li>
                                     </ul>
                                 <ul class="label"><li>R Statistical<br />Software</li><li>Python</li><li>HTML + CSS</li><li>JavaScript</li></ul>
                                 <ul class="y-axis"><li>Expert</li><li>Proficient</li><li>Beginner</li></ul>
                                 </div>
                             </div>
+                    </div>
+                    <div class = "col-lg-2">
+
                     </div>
                     <div class = "col-lg-2">
                     </div>
@@ -113,7 +121,6 @@
                     <div class = "col-lg-2">
                     </div>
                     <div class = "col-lg-2 zoomTarget" data-duration = "1300" data-closeclick = "true">
-                        <div id = "line4"></div>
                             <div id = "research" class = "section">
                                 <p id = "resTitle">research</p>
                                 <div id = "timeLine">
@@ -162,6 +169,7 @@
                                     <img id = "fish" src = "images/fish.png" height = "30">
                                     <img id = "iceland" src = "images/iceland.png" height = "20">
                                     <p id = "hobTitle">my hobbies</p>
+                                    <p id = "hobbyHover">*hover to see my hobbies</p>
                                 </div>
                         </div> 
                     </div>
@@ -206,8 +214,6 @@
 
 
         </div>
-        <div class="zoomButton prev" id = "previousButton" data-type="prev" data-root=".demo"><</div>
-        <div class="zoomButton next" id = "nextButton" data-type="next" data-root=".demo" onkeydown = "39">></div>
 
 
         <link  rel="stylesheet" type="text/css" href="A6_style.css">

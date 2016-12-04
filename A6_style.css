@@ -1,16 +1,17 @@
 /*setting up page*/
 html {
-    background: lightgrey;
+    background: #f9eaea;
 }
 html * {
-    font-family: "avenir", sans-serif !important;
+    font-family: "avenir", "helvetica", "sans-serif" !important;
 }
 
 h1 {
     text-align: center;
-    background: lightgrey;
+    background: #f9eaea;
     height: 60px;
-    margin: 20px;
+    padding-top: 10px;
+    margin: 0 !important;
 }
 
 /*HELP POP-UP*/
@@ -47,54 +48,42 @@ h1 {
 
 #line1 {
     position: absolute;
-    width: 110%;
-    border-top-style: solid;
+    width: 420px;
+    border-top-style: dashed;
     margin-left: 50px;
     margin-top: 40px;
     border-width: 1px;
     z-index: -9999999;
-    transform: rotate(25deg);
+    transform: rotate(14deg);
 }
 
 #line2 {
     position: absolute;
-    width: 135px;
-    border-top-style: solid;
+    width: 200px;
+    border-top-style: dashed;
     margin-left: 50px;
     margin-top: 45px;
     border-width: 1px;
     z-index: -9999999;
-    transform: rotate(25deg);
+    transform: rotate(150deg);
 }
 
 
 #line3 {
     position: absolute;
-    width: 400px;
-    border-top-style: solid;
+    width: 550px;
+    border-top-style: dashed;
     margin-left: 50px;
     margin-top: 45px;
     border-width: 1px;
     z-index: -9999999;
-    transform: rotate(15deg);
-}
-
-#line4 {
-    position: absolute;
-    width: 250px;
-    border-top-style: dashed;
-    color: grey;
-    margin-left: 50px;
-    margin-top: 25px;
-    border-width: 1px;
-    z-index: -9999999;
-    transform: rotate(45deg);
+    transform: rotate(10deg);
 }
 
 #dashLine1 {
     position: absolute;
     width: 250px;
-    border-top-style: solid;
+    border-top-style: dashed;
     margin-left: 50px;
     margin-top: 45px;
     border-width: 1px;
@@ -105,7 +94,7 @@ h1 {
 #dashLine2 {
     position: absolute;
     width: 400px;
-    border-top-style: solid;
+    border-top-style: dashed;
     margin-left: 50px;
     margin-top: 45px;
     border-width: 1px;
@@ -142,23 +131,34 @@ h1 {
 
 /*zoom buttons*/
 
-.zoomButton {
-    visibility: hidden;
-    height: 50px;
-    width: 50px;
-    background-color: grey;
+#navArrows {
+    margin-left: 87%;
 }
 
-/*
+.zoomButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #b2497d;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    margin-top: -45px;
+    margin-left: 10px;
+}
+
 #previousButton {
     float: left;
-    position: relative;
+
 }
 
 #nextButton {
     float: right;
-    position: relative;
-}*/
+
+}
 
 /*About Me*/
 
@@ -317,7 +317,7 @@ h1 {
     padding: 0;
     width: 120px;
     text-align: center;
-    margin-top: -15px;
+    margin-top: 7px;
 }
 
 .bargraph {     
@@ -326,7 +326,7 @@ h1 {
     position: relative; 
     border-left: 1px solid #d4d4d4;
     margin: 0px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .bargraph ul.bars {
@@ -377,7 +377,7 @@ ul.y-axis { list-style-type: none; position: absolute;
     left: -45px; 
     width: 40px;
     text-align: right;
-    bottom: -20px;
+    bottom: -17px;
     margin: 0; padding: 0; 
 }
 
@@ -387,7 +387,7 @@ ul.y-axis li:first-child {
 }
 
 ul.y-axis li { 
-    color: #aba8a8;  
+    color: #999797;  
     font-size: 3px;
     height: 30px;
     line-height: 20px;
@@ -529,6 +529,7 @@ ul.y-axis li {
     line-height: 8px;
 }
 
+#hobbyHover { font-size: 4px; padding-top: 42px; }
 
 #hobbies img {
     position: absolute;
@@ -613,10 +614,9 @@ ul.y-axis li {
     transition: all 0.3s ease-out;
 }
 
-#images:hover > #hobTitle {
-    background: none;
-}
+#images:hover > #hobTitle { background: none; }
 
+#images:hover > #hobbyHover { visibility: hidden; }
 
 
 /*CONTACT ME*/
