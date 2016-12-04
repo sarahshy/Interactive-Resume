@@ -1,10 +1,6 @@
 /*setting up page*/
-html {
-    background: #f9eaea;
-}
-html * {
-    font-family: "avenir", "helvetica", "sans-serif" !important;
-}
+html { background: #f9eaea; }
+html * { font-family: "avenir", "helvetica", "sans-serif" !important; }
 
 h1 {
     text-align: center;
@@ -12,6 +8,7 @@ h1 {
     height: 60px;
     padding-top: 10px;
     margin: 0 !important;
+    font-variant: small-caps;
 }
 
 /*HELP POP-UP*/
@@ -110,10 +107,7 @@ h1 {
     font-size: 7px;
 }
 
-.section p{
-    padding-top: 30px;
-    padding-left: 5px;
-}
+.section p{ padding-top: 30px; padding-left: 5px; }
 
 
 #clickHere {
@@ -131,13 +125,12 @@ h1 {
 
 /*zoom buttons*/
 
-#navArrows {
-    margin-left: 87%;
-}
+#navArrows { margin-left: 83%; }
 
 .zoomButton {
+    font-variant: none;
     height: 50px;
-    width: 50px;
+    width: 80px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -145,20 +138,13 @@ h1 {
     text-align: center;
     line-height: 50px;
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     margin-top: -45px;
     margin-left: 10px;
 }
 
-#previousButton {
-    float: left;
-
-}
-
-#nextButton {
-    float: right;
-
-}
+#previousButton { float: left; box-shadow: 0.75px 0.75px black; }
+#nextButton { float: right; box-shadow: 0.75px 0.75px black; }
 
 /*About Me*/
 
@@ -194,9 +180,7 @@ h1 {
 
 /*Skills*/
 
-#skills {
-    border-style: none;
-}
+#skills { border-style: none; }
 #skillsCircle {
     position: absolute;
     height: 50px;
@@ -359,9 +343,12 @@ h1 {
 .bargraph ul.bars li.orangebar  {  background-position: -90px bottom; }
 
 
-.label { list-style-type: none; 
-         position: absolute; bottom: -10px; 
-         margin: 0; padding: 0; margin-left: 5px;}
+.label { 
+    list-style-type: none; 
+    position: absolute; bottom: -10px; 
+    margin: 0; padding: 0; margin-left: 5px;
+}
+
 .label li { 
     color: black; 
     text-transform: uppercase; 
@@ -371,7 +358,6 @@ h1 {
     float: left;
     text-align: center;
 }
-
 
 ul.y-axis { list-style-type: none; position: absolute; 
     left: -45px; 
@@ -449,9 +435,9 @@ ul.y-axis li {
     line-height: 3px;
 }
 
-#res1:hover span, #res2:hover span, #res3:hover span{
-    visibility: visible;
-}
+#res1:hover span,
+#res2:hover span,
+#res3:hover span{ visibility: visible; }
 
 #res2 {
     position: absolute;
@@ -480,7 +466,7 @@ ul.y-axis li {
 
 
 #hoverInst {
-    font-size: 2.5px;
+    font-size: 3px;
     color: #4D4D4D;
     text-align: center;
     line-height: 40px;
@@ -529,12 +515,9 @@ ul.y-axis li {
     line-height: 8px;
 }
 
-#hobbyHover { font-size: 4px; padding-top: 42px; }
+#hobbyHover { font-size: 3px; padding-top: 42px; }
 
-#hobbies img {
-    position: absolute;
-    opacity: 0.5;
-}
+#hobbies img { position: absolute; opacity: 0.5; }
 
 #images {
     position: absolute;
@@ -615,7 +598,6 @@ ul.y-axis li {
 }
 
 #images:hover > #hobTitle { background: none; }
-
 #images:hover > #hobbyHover { visibility: hidden; }
 
 
@@ -686,9 +668,7 @@ ul.y-axis li {
     transition: opacity 0.5s;
 }
 
-#contactInfo:hover{
-    opacity: 1;
-}
+#contactInfo:hover{ opacity: 1; }
 
 #contact {
     padding: 0;
@@ -697,9 +677,7 @@ ul.y-axis li {
     line-height: 8px;
 }
 
-#contact p{
-    margin: 0;
-}
+#contact p{ margin: 0; }
 
 #hooray1 {
     display: none;
@@ -741,10 +719,7 @@ ul.y-axis li {
     margin-left: 15px;
 }
 
-#hypotheses p{
-    padding: 1px;
-    margin: 0;
-}
+#hypotheses p{ padding: 1px; margin: 0; }
 
 #falseMessage {
     display: none;

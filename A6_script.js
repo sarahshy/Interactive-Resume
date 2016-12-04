@@ -72,13 +72,15 @@ $(document).keydown(function(e) {
         break;
 
         case 38: // up
+            $('.zoomButton.prev').trigger('click');
         break;
-
+            
         case 39: // right
             $('.zoomButton.next').trigger('click');
         break;
 
         case 40: // down
+            $('.zoomButton.next').trigger('click');
         break;
 
         default: return; // exit this handler for other keys
