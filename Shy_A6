@@ -10,14 +10,15 @@
         <div class = "zoomViewport demo">
             <div class = "container zoomContainer">
                 <div class = "row" style = "height: 90px"> 
-                    <div class = "col-md-2 zoomTarget" data-targetsize="0.9">
-                        <div id = "aboutme" class = "section">
-                            <p id = "aboutLabel">about me</p>
-                            <p>I’m Sarah Shy, an undergraduate student at Carnegie Mellon University from Boston, Massachusetts.</p>
-                            <p>I am working toward a degree in Statistics and an additional degree in Human-Computer Interaction.</p>
-                            <p>I recently became interested in the field of research, picking up semester-long independent study research projects.</p>
-                            <p>I plan to continue to conduct research in graduate school.</p>
-                        </div>
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                        <div id = "line1"></div>
+                            <div id = "aboutme" class = "section">
+                                <p id = "aboutLabel">about me</p>
+                                <p>Hi! I’m Sarah Shy, an undergraduate student at Carnegie Mellon University from Boston, Massachusetts.</p>
+                                <p>I am working toward a degree in Statistics and an additional degree in Human-Computer Interaction.</p>
+                                <p>I recently became interested in the field of research, picking up semester-long independent study research projects.</p>
+                                <p>I plan to continue to conduct research in graduate school.</p>
+                            </div>
                     </div>
                     <div class = "col-md-2">
                     </div>
@@ -34,93 +35,110 @@
                 <div class = "row" style = "height: 90px">
                     <div class = "col-md-2">
                     </div>
-                    <div class = "col-md-2 zoomTarget">
-                        <div id = "skills" class = "section">
-                            <div id = "skillsCircle">skills</div>
-                            <div id = "outerCircle"></div>
-                            <span id = "ucd">user-centered design</span>
-                            <div id = "dataVis">data visualization</div>
-                            <div id = "webProgram">web programming</div>
-                            <div id = "webCircle"></div>
-                            <div id = "EDA">exploratory data analysis</div>
-                            <div id = "EDACircle"></div>
-                            <div id = "regression">regression</div>
-                        </div>
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                </div>
-
-                <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2 zoomTarget">
-                        <div id = "software" class = "section">
-                            <p>(Temp filler) Software stuff</p>
-                        </div>
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                </div>
-
-                <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2 zoomTarget">
-                        <div id = "hobbies" class = "section">
-                            <p id = "hobTitle">my hobbies</p>
-                        </div>
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                </div>
-
-                <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2 zoomTarget">
-                        <div id = "research" class = "section">
-                            <p id = "resTitle">research</p>
-                            <div id = "timeLine">
-                                <div id = "firstTick" class = "tick" style = "margin-left: 35px"></div>
-                                <div id = "secondTick" class = "tick" style = "margin-left: 75px"></div>
-                                <div id = "2015" style = "position: absolute; font-size: 3px; margin-left: 15px">2015</div>
-                                <div id = "2016" style = "position: absolute; font-size: 3px; margin-left: 52px">2016</div>
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                        <div id = "line2"></div>
+                            <div id = "skills" class = "section">
+                                <div id = "skillsCircle">skills</div>
+                                <div id = "outerCircle"></div>
+                                <span id = "ucd">user-centered design</span>
+                                <div id = "dataVis">data visualization</div>
+                                <div id = "webProgram">web programming</div>
+                                <div id = "webCircle"></div>
+                                <div id = "EDA">exploratory data analysis</div>
+                                <div id = "EDACircle"></div>
+                                <div id = "regression">regression</div>
                             </div>
-                            <p class = "resLabel" style = "margin-left: 15px; margin-top: -28px;">Independent Study Research<br />Statistics Department, CMU</p>
-                            <p class = "resLabel" style = "margin-left: 30px; margin-top: -20px;">Research Assistant<br />Infant Language & Learning Lab<br />Psychology Department, CMU</p>
-                            <p class = "resLabel" style = "margin-left: 45px; margin-top: -33px;">Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU</p>
-                            <div id = "res1">
-                                <div class = "dot"></div>
-                                <div id = "res1Line"></div>
-                            </div>
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                </div>
 
-                            <div id = "res2"><div class = "dot"></div></div>
-                            <div id = "res3"><div id = "lastDot">&#9733;</div></div>
-                            <p id = "hoverInst">* hover over a box to see details</p>
-                        </div>
+                <div class = "row" style = "height: 100px">
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                        <div id = "line3"></div>
+                            <div id = "software" class = "section">
+                                <p>(Temp filler) Software stuff</p>
+                            </div>
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                </div>
+
+                <div class = "row" style = "height: 100px">
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                        <div id = "line4"></div>
+                            <div id = "research" class = "section">
+                                <p id = "resTitle">research</p>
+                                <div id = "timeLine">
+                                    <div id = "firstTick" class = "tick" style = "margin-left: 35px"></div>
+                                    <div id = "secondTick" class = "tick" style = "margin-left: 75px"></div>
+                                    <div id = "2015" style = "position: absolute; font-size: 3px; margin-left: 15px">2015</div>
+                                    <div id = "2016" style = "position: absolute; font-size: 3px; margin-left: 52px">2016</div>
+                                </div>
+                                <p class = "resLabel" style = "margin-left: 15px; margin-top: -28px;">Statistics Department<br />Carnegie Mellon University</p>
+                                <p class = "resLabel" style = "margin-left: 30px; margin-top: -20px;">Infant Language and Learning Lab<br />Psychology Department, CMU</p>
+                                <p class = "resLabel" style = "margin-left: 45px; margin-top: -33px;">Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU</p>
+                                <div id = "res1" class = "description">
+                                    <span>Independent Study Research<br />Statistics Department, CMU<br />9/2015 - 1/2016</span>
+                                    <img id = "dot1" src = "images/line1.png">
+                                </div>
+                                <div id = "res2" class = "description">
+                                    <span>Research Assistant<br />Infant Language & Learning Lab<br />Psychology Department, CMU<br />1/2016 - 5/2016</span>
+                                    <img id = "dot2" src = "images/line2.png">
+                                </div>
+                                <div id = "res3" class = "description">
+                                    <span>Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU<br />5/2016 - Current</span>
+                                    <img id = "dot3" src = "images/line3.png">
+                                </div>
+                                <p id = "hoverInst">* hover over a box to see details</p>
+                            </div>
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                </div>
+
+                <div class = "row" style = "height: 100px">
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                        <div id = "dashLine1"></div>
+                        <div id = "dashLine2"></div>
+                            <div id = "hobbies" class = "section">
+                                <div id = "images">
+                                    <img id = "violin" src = "images/violin.png" height = "20">
+                                    <img id = "ski" src = "images/ski.png" height = "30">
+                                    <img id = "plane" src = "images/plane.png" width = "55">
+                                    <img id = "fish" src = "images/fish.png" height = "30">
+                                    <img id = "iceland" src = "images/iceland.png" height = "20">
+                                    <p id = "hobTitle">my hobbies</p>
+                                </div>
+                        </div> 
                     </div>
                     <div class = "col-md-2">
                     </div>
@@ -137,15 +155,25 @@
                     </div>
                     <div class = "col-md-2">
                     </div>
-                    <div class = "col-md-2 zoomTarget">
+                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
                         <div id = "contactme" class = "section">
                             <p id = "contTitle">let's play a game...</p>
                             <p id = "gameInst">Enter a decimal between 0 and 1:</p>
-                            <div id = "input"><input type = "text" placeholder = "i.e. 0.73" onkeyup="if(event.keyCode==13) enterValue();"></input></div>  
+                            <div id = "input"><input type = "text" placeholder = "i.e. 0.73" onkeyup="if(event.keyCode==13) enterValue();"></input></div> 
+                            <p id = "hooray">Hooray! With a p-value of <span class = "insertValue"></span>, we fail to reject the null hypothesis and conclude that Sarah WILL get the job!</p>
+                            <p id = "boo">With a p-value of <span class = "insertValue"></span>, we reject the null hypothesis and conclude that Sarah will not get the job. Let's review her qualifications again!</p>
+                            <p id = "falseMessage">Uh oh! You did not enter a decimal between 0 and 1.<br />For example: 0.73</p>
+                            <div id = "hypotheses">
+                                <p>H<sub>0</sub>: Sarah gets the job</p>
+                                <p>H<sub>A</sub>: Sarah does not get the job</p>
+                            </div>
                         </div>
-                        <div id = "contactInfo">contact me</div>
-                        <p class = "contact">sarahshy@cmu.edu</p>
-                        <p class = "contact">617-407-1019</p>
+                        <div id = "contactInfo">contact me
+                            <div id = "contact">
+                                <p>sarahshy@cmu.edu</p>
+                                <p>617-407-1019</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
