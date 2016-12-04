@@ -15,39 +15,84 @@
 
 //Setting up data for pie chart
 
-var languageData = {
-    labels : ["English", "Hebrew", "German"],
-    datasets : [
-        {
-            fillColor : "rgba(172,194,132,0.4)",
-            strokeColor : "#ACC26D",
-            pointColor : "#fff",
-            pointStrokeColor : "#9DB86D",
-            data : [63, 25, 12],
-            label: ["English", "Hebrew", "German"],
-            backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56"]
-        }
-        ]
-}
-var languages = document.getElementById('languages').getContext('2d');
-new Chart(languages , {
-    type: "pie",
-    data: languageData,
-    options: {legend: {
-            display: false
-         }
-     }
+
+// var languageData = {
+//     labels : ["English", "Hebrew", "German"],
+//     datasets : [
+//         {
+//             fillColor : "rgba(172,194,132,0.4)",
+//             strokeColor : "#ACC26D",
+//             pointColor : "#fff",
+//             pointStrokeColor : "#9DB86D",
+//             data : [63, 25, 12],
+//             label: ["English", "Hebrew", "German"],
+//             backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56"]
+//         }
+//         ]
+// }
+// var languages = document.getElementById('languages').getContext('2d');
+// new Chart(languages , {
+//     type: "pie",
+//     data: languageData,
+//     options: {legend: {
+//             display: false
+//          }
+//      }
+// });
+
+
+// var cvs = document.getElementById('cvs');
+// cvs.width = 30;
+// cvs.height = 25;
+
+
+// Help screen pop up
+$(document).ready(function () {
+
+    // Showing the popup
+    $("#popup").hide().fadeIn(1000);
+
+    // Close button
+    $("#close").on("click", function (e) {
+        e.preventDefault();
+        $("#popup").fadeOut(1000);
+    });
+
 });
 
 
-var cvs = document.getElementById('cvs');
-cvs.width = 30;
-cvs.height = 25;
+// Use arrows to navigate zoom container
+$(document).keydown(function(e) {
+    var prev = $('.zoomButton.prev');
+    var next = $('.zoomButton.next');
+
+    switch(e.which) {
+        case 37: // left
+            $('.zoomButton.prev').trigger('click');
+        break;
+
+        case 38: // up
+        break;
+
+        case 39: // right
+            $('.zoomButton.next').trigger('click');
+        break;
+
+        case 40: // down
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
 
 
+
+
+// Setting up game functions
 function enterValue() {
     console.log("Value entered!")
-    var value = $(':input').val();
+    var value = $('#contactme :input').val();
     console.log("Value set");
     $('#gameInst').fadeOut();
     $('#falseMessage').fadeOut();
@@ -74,19 +119,19 @@ function enterValue() {
     }
 
     else {
-        $(':input').val("");
+        $('#contactme :input').val("");
         showFalseMessage();
     }
 };
 
-
+// Help functions for game
 function hideTask() {
     $('#input').fadeOut();
     $('#gameInst').fadeOut();
 };
 
 function showHooray() {
-    var value = $(':input').val();
+    var value = $('#contactme :input').val();
     $('#hooray1').fadeIn();
     $('#hooray2').fadeIn();
     $('.insertValue').text(value);
@@ -94,7 +139,7 @@ function showHooray() {
 };
 
 function showBoo() {
-    var value = $(':input').val();
+    var value = $('#contactme :input').val();
     $('#boo').fadeIn();
     $('.insertValue').text(value);
 };
