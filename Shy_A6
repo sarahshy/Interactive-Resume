@@ -2,7 +2,8 @@
 
 <html>
     <head>
-
+        <title>Sarah Shy</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
     </head>
 
     <body>
@@ -10,7 +11,7 @@
         <div class = "zoomViewport demo">
             <div class = "container zoomContainer">
                 <div class = "row" style = "height: 90px"> 
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "line1"></div>
                             <div id = "aboutme" class = "section">
                                 <p id = "aboutLabel">about me</p>
@@ -18,24 +19,27 @@
                                 <p>I am working toward a degree in Statistics and an additional degree in Human-Computer Interaction.</p>
                                 <p>I recently became interested in the field of research, picking up semester-long independent study research projects.</p>
                                 <p>I plan to continue to conduct research in graduate school.</p>
+                                <canvas id="languages" height = "300"></canvas>
                             </div>
+                            
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
                 </div>
 
                 <div class = "row" style = "height: 90px">
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
+                        <img id = "arrow" src = "images/arrow.png" height = "150px">
                     </div>
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "line2"></div>
                             <div id = "skills" class = "section">
                                 <div id = "skillsCircle">skills</div>
@@ -49,45 +53,44 @@
                                 <div id = "regression">regression</div>
                             </div>
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
                 </div>
 
                 <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "line3"></div>
                             <div id = "software" class = "section">
                                 <p>(Temp filler) Software stuff</p>
                             </div>
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
                 </div>
 
                 <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
+                    <div class = "col-xs-4">
+                        <div id = "clickHere">Click here!</div>
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
-                    </div>
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "line4"></div>
                             <div id = "research" class = "section">
                                 <p id = "resTitle">research</p>
@@ -98,35 +101,35 @@
                                     <div id = "2016" style = "position: absolute; font-size: 3px; margin-left: 52px">2016</div>
                                 </div>
                                 <p class = "resLabel" style = "margin-left: 15px; margin-top: -28px;">Statistics Department<br />Carnegie Mellon University</p>
-                                <p class = "resLabel" style = "margin-left: 30px; margin-top: -20px;">Infant Language and Learning Lab<br />Psychology Department, CMU</p>
-                                <p class = "resLabel" style = "margin-left: 45px; margin-top: -33px;">Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU</p>
+                                <p class = "resLabel" style = "margin-left: 29px; margin-top: -18px;">Infant Language and Learning Lab<br />Psychology Department, CMU</p>
+                                <p class = "resLabel" style = "margin-left: 45px; margin-top: -33px;">Human-Computer Interaction Institute<br />CMU</p>
                                 <div id = "res1" class = "description">
-                                    <span>Independent Study Research<br />Statistics Department, CMU<br />9/2015 - 1/2016</span>
+                                    <span><b>Independent Study Research</b><br />Statistics Department, CMU<br />9/2015 - 1/2016</span>
                                     <img id = "dot1" src = "images/line1.png">
                                 </div>
                                 <div id = "res2" class = "description">
-                                    <span>Research Assistant<br />Infant Language & Learning Lab<br />Psychology Department, CMU<br />1/2016 - 5/2016</span>
+                                    <span><b>Research Assistant</b><br />Infant Language & Learning Lab<br />Psychology Department<br />Carnegie Mellon University<br />1/2016 - 5/2016</span>
                                     <img id = "dot2" src = "images/line2.png">
                                 </div>
                                 <div id = "res3" class = "description">
-                                    <span>Research in Social Computing<br />Human-Computer Interaction Institute<br />CMU<br />5/2016 - Current</span>
+                                    <span><b>Research in Social Computing</b><br />Human-Computer Interaction Institute<br />Carnegie Mellon University<br />5/2016 - Current</span>
                                     <img id = "dot3" src = "images/line3.png">
                                 </div>
                                 <p id = "hoverInst">* hover over a box to see details</p>
                             </div>
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
                 </div>
 
                 <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "true">
                         <div id = "dashLine1"></div>
                         <div id = "dashLine2"></div>
                             <div id = "hobbies" class = "section">
@@ -140,27 +143,28 @@
                                 </div>
                         </div> 
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
                 </div>
 
                 <div class = "row" style = "height: 100px">
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2">
+                    <div class = "col-xs-2">
                     </div>
-                    <div class = "col-md-2 zoomTarget" data-duration = "1000">
+                    <div class = "col-xs-2 zoomTarget" data-duration = "1000" data-closeclick = "false">
                         <div id = "contactme" class = "section">
                             <p id = "contTitle">let's play a game...</p>
                             <p id = "gameInst">Enter a decimal between 0 and 1:</p>
                             <div id = "input"><input type = "text" placeholder = "i.e. 0.73" onkeyup="if(event.keyCode==13) enterValue();"></input></div> 
-                            <p id = "hooray">Hooray! With a p-value of <span class = "insertValue"></span>, we fail to reject the null hypothesis and conclude that Sarah WILL get the job!</p>
+                            <p id = "hooray1">Hooray!</p>
+                            <p id = "hooray2">With a p-value of <span class = "insertValue"></span>, we fail to reject the null hypothesis and conclude that Sarah <b>will</b> get the job!</p>
                             <p id = "boo">With a p-value of <span class = "insertValue"></span>, we reject the null hypothesis and conclude that Sarah will not get the job. Let's review her qualifications again!</p>
                             <p id = "falseMessage">Uh oh! You did not enter a decimal between 0 and 1.<br />For example: 0.73</p>
                             <div id = "hypotheses">
@@ -187,7 +191,7 @@
         <link  rel="stylesheet" type="text/css" href="A6_style.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script type="text/javascript" src="http://joelb.me/scrollpath/jquery.scrollpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomooz/1.1.5/jquery.zoomooz.js"></script>
         <script type = "text/javascript" src="A6_script.js"></script>
 

@@ -13,6 +13,37 @@
 
 // );
 
+//Setting up data for pie chart
+
+var languageData = {
+    labels : ["English", "Hebrew", "German"],
+    datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [63, 25, 12],
+            label: ["English", "Hebrew", "German"],
+            backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56"]
+        }
+        ]
+}
+var languages = document.getElementById('languages').getContext('2d');
+new Chart(languages , {
+    type: "pie",
+    data: languageData,
+    options: {legend: {
+            display: false
+         }
+     }
+});
+
+
+var cvs = document.getElementById('cvs');
+cvs.width = 30;
+cvs.height = 25;
+
 
 function enterValue() {
     console.log("Value entered!")
@@ -56,7 +87,8 @@ function hideTask() {
 
 function showHooray() {
     var value = $(':input').val();
-    $('#hooray').fadeIn();
+    $('#hooray1').fadeIn();
+    $('#hooray2').fadeIn();
     $('.insertValue').text(value);
 
 };
